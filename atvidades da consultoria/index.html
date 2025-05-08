@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <style>
+        body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+header, footer {
+  background-color: #20232a;
+  color: #fff;
+  padding: 1rem 2rem;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0 0 0;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+nav a {
+  color: #61dafb;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+main {
+  padding: 2rem;
+}
+
+section {
+  margin-bottom: 2rem;
+}
+
+h1, h2, h3 {
+  color: #20232a;
+}
+
+/* === INDEX.HTML === */
+.index section:first-of-type {
+  background-color: #e8f0fe;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.index section:nth-of-type(2) article {
+  background-color: #ffffff;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-left: 4px solid #61dafb;
+  box-shadow: 0 0 5px rgba(0,0,0,0.05);
+}
+
+.index form {
+  background-color: #ffffff;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+  max-width: 500px;
+  margin: auto;
+}
+
+.index form input,
+.index form textarea {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.index form button {
+  background-color: #61dafb;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.index form button:hover {
+  background-color: #4ea9d8;
+}
+
+/* === SERVICOS.HTML === */
+.servicos ul {
+  list-style: disc inside;
+  background-color: #ffffff;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.05);
+}
+
+/* === BLOG.HTML === */
+.blog article {
+  background-color: #ffffff;
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  border-left: 4px solid #20232a;
+  box-shadow: 0 0 5px rgba(0,0,0,0.05);
+}
+
+.blog article h2 {
+  margin-top: 0;
+  color: #20232a;
+}
+    </style>
+index.html: <body class="index">
+
+servicos.html: <body class="servicos">
+
+blog.html: <body class="blog">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Consultoria em Marketing de Conteúdo</title>
+  <link rel="stylesheet" href="static/css/estilocss.css" />
+</head>
+<body>
+  <header>
+    <h1>Consultoria em Marketing de Conteúdo</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="servicos.html">Serviços</a></li>
+        <li><a href="blog.html">Blog</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>Especialistas em Conteúdo Digital</h2>
+      <p>Ajudamos marcas a crescer com estratégias de conteúdo inteligentes e eficazes.</p>
+    </section>
+
+    <section>
+      <h2>Estudos de Caso</h2>
+      <article>
+        <h3>Campanha Blog </h3>
+        <p>+200% de tráfego orgânico em 3 meses. Estratégia baseada em SEO e conteúdos evergreen.</p>
+      </article>
+      <article>
+        <h3>Redes Sociais Marca Y</h3>
+        <p>Engajamento triplicado com um novo plano de conteúdo personalizado.</p>
+      </article>
+    </section>
+
+    <section>
+      <h2>Solicite um Orçamento</h2>
+      <form action="mailto:contato@consultoria.com" method="post">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required />
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" required />
+        <label for="mensagem">Mensagem:</label>
+        <textarea id="mensagem" name="mensagem"></textarea>
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Consultoria de Marketing de Conteúdo</p>
+  </footer>
+</body>
+</html>
