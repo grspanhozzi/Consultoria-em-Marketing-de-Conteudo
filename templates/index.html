@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <style>
+    body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+@keyframes piscarFundo {
+  0%   { background-color: #20232a; }
+  50%  { background-color: #444; }
+  100% { background-color: #20232a; }
+}
+
+header, footer {
+  background-color: #20232a;
+  color: #fff;
+  padding: 1rem 2rem;
+  text-align: center;
+  animation: piscarFundo 2s infinite;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0 0 0;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+nav a {
+  color: #61dafb;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: red;
+}
+
+main {
+  padding: 2rem;
+}
+
+section {
+  margin-bottom: 2rem;
+}
+
+h1, h2, h3 {
+  color: #20232a;
+}
+
+form {
+  background-color: #fff;
+  padding: 20px;
+  max-width: 400px;
+  margin: auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.servicos ul {
+  list-style: disc inside;
+  background-color: #ffffff;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.05);
+}
+
+.blog article {
+  background-color: #ffffff;
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  border-left: 4px solid #20232a;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.05);
+}
+
+.blog article h2 {
+  margin-top: 0;
+  color: #20232a;
+}
+  </style>
+  <meta charset="UTF-8" />
+  <title>Consultoria em Marketing de Conteúdo</title>
+  <link rel="stylesheet" href="static/style.css" />
+</head>
+<body>
+  <header>
+    <h1>Consultoria em Marketing de Conteúdo</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="serviços.html">Serviços</a></li>
+        <li><a href="blog.html">Blog</a></li>
+      </ul>
+    </nav>
+  </header>
+   <img src="../img/f3111380-b5ec-4c6c-85d3-cf080f92533c.png" alt="minha logo" width="100%">
+  <main>
+    <section>
+     <h2>Consultoria em Marketing de Conteúdo</h2>
+<p>Queremos ajudar sua empresa a crescer usando conteúdo autentico e de qualidade.</p>
+</section>
+
+<section>
+  <h2>Resultados</h2>
+  <article>
+    <h3>Mais Acessos</h3>
+    <p>Conseguimos aumentar crescentemente em 3 meses com bons textos e planejamento.</p>
+  </article>
+  <article>
+    <h3>Redes Sociais</h3>
+    <p>O engajamento aumentou bastante com conteúdos feitos especialmente para o público.</p>
+  </article>
+</section>
+    <section>
+      <h2>Solicite um Orçamento</h2>
+      <form action="mailto:contato@consultoria.com" method="post">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required />
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" required />
+        <label for="mensagem">Mensagem:</label>
+        <textarea id="mensagem" name="mensagem"></textarea>
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Consultoria de Marketing de Conteúdo</p>
+  </footer>
+</body>
+
+</html>
